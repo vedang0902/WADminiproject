@@ -1,6 +1,6 @@
 .explore-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/300') center/cover no-repeat;
-    color: white;
+    color: rgb(240, 240, 240);
     padding: 50px 0;
     text-align: center;
 }
