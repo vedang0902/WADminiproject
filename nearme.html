@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Options Near Me - CampusMess</title>
+    <link rel="stylesheet" href="nearme.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>CampusMess</h1>
+                <p class="tagline">Find your perfect mess</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="top-rated.html">Top Rated</a></li>
+                    <li><a href="near-me.html" class="active">Near Me</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-secondary">Log In</button>
+                <button class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero near-me-hero">
+        <div class="container">
+            <div class="page-hero-content">
+                <h1>Mess Options Near You</h1>
+                <p>Discover convenient dining options within walking distance</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="near-me-content">
+        <div class="container">
+            <div class="location-finder">
+                <div class="location-status">
+                    <div class="status-icon">📍</div>
+                    <div class="status-text">
+                        <p class="current-location">Currently showing mess options near:</p>
+                        <h3>Engineering College Campus</h3>
+                    </div>
+                </div>
+                <div class="location-actions">
+                    <button class="btn btn-outline btn-location"><span class="location-icon">📡</span> Update Location</button>
+                    <select class="campus-select">
+                        <option value="engineering">Engineering College</option>
+                        <option value="arts">Arts College</option>
+                        <option value="science">Science Campus</option>
+                        <option value="medical">Medical College</option>
+                        <option value="business">Business School</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="distance-filter">
+                <p>Show mess options within:</p>
+                <div class="distance-options">
+                    <button class="distance-btn active">500m</button>
+                    <button class="distance-btn">1km</button>
+                    <button class="distance-btn">2km</button>
+                    <button class="distance-btn">5km</button>
+                    <button class="distance-btn">All</button>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <img src="/api/placeholder/1200/400" alt="Map with mess locations">
+                    <div class="map-overlay">Interactive map loading... <br>Please allow location access for the best experience</div>
+                </div>
+            </div>
+
+            <div class="nearby-options">
+                <h2 class="section-title">Mess Options Near You</h2>
+                
+                <div class="nearby-mess-list">
+                    <!-- Nearby Mess 1 -->
+                    <div class="nearby-mess-card">
+                        <div class="distance-badge">350m</div>
+                        <div class="nearby-mess-img">
+                            <img src="/api/placeholder/300/200" alt="Sunshine Mess">
+                            <span class="rating">4.7 ⭐</span>
+                        </div>
+                        <div class="nearby-mess-info">
+                            <h3>Sunshine Mess</h3>
+                            <p class="location">123 College Road</p>
+                            <p class="directions">5 min walk from Engineering Library</p>
+                            <p class="price">₹2,500/month</p>
+                            <div class="tags">
+                                <span class="tag">Veg</span>
+                                <span class="tag">Non-Veg</span>
+                                <span class="tag">Breakfast</span>
+                            </div>
+                            <div class="nearby-actions">
+                                <button class="btn btn-secondary">View Details</button>
+                                <button class="btn btn-outline directions-btn"><span class="directions-icon">🧭</span> Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nearby Mess 2 -->
+                    <div class="nearby-mess-card">
+                        <div class="distance-badge">450m</div>
+                        <div class="nearby-mess-img">
+                            <img src="/api/placeholder/300/200" alt="Delicious Meals">
+                            <span class="rating">4.8 ⭐</span>
+                        </div>
+                        <div class="nearby-mess-info">
+                            <h3>Delicious Meals</h3>
+                            <p class="location">78 Campus Corner</p>
+                            <p class="directions">Behind Engineering Block B</p>
+                            <p class="price">₹2,800/month</p>
+                            <div class="tags">
+                                <span class="tag">Veg</span>
+                                <span class="tag">Non-Veg</span>
+                                <span class="tag">Home Delivery</span>
+                            </div>
+                            <div class="nearby-actions">
+                                <button class="btn btn-secondary">View Details</button>
+                                <button class="btn btn-outline directions-btn"><span class="directions-icon">🧭</span> Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nearby Mess 3 -->
+                    <div class="nearby-mess-card">
+                        <div class="distance-badge">800m</div>
+                        <div class="nearby-mess-img">
+                            <img src="/api/placeholder/300/200" alt="Quick Bites">
+                            <span class="rating">4.3 ⭐</span>
+                        </div>
+                        <div class="nearby-mess-info">
+                            <h3>Quick Bites</h3>
+                            <p class="location">15 Hostel Lane</p>
+                            <p class="directions">Opposite to Boys Hostel 3</p>
+                            <p class="price">₹2,000/month</p>
+                            <div class="tags">
+                                <span class="tag">Veg</span>
+                                <span class="tag">Quick Service</span>
+                                <span class="tag">Lunch Only</span>
+                            </div>
+                            <div class="nearby-actions">
+                                <button class="btn btn-secondary">View Details</button>
+                                <button class="btn btn-outline directions-btn"><span class="directions-icon">🧭</span> Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nearby-stats">
+                <div class="stats-card">
+                    <div class="stats-number">14</div>
+                    <p>Mess options within 1km</p>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">5</div>
+                    <p>Highly rated options</p>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">8</div>
+                    <p>Budget-friendly options</p>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-number">3</div>
+                    <p>With home delivery</p>
+                </div>
+            </div>
+
+            <div class="special-nearby">
+                <h2 class="section-title">Special Offers Near You</h2>
+                <div class="special-cards">
+                    <div class="special-card">
+                        <div class="offer-badge">20% OFF</div>
+                        <img src="/api/placeholder/400/200" alt="Special Offer">
+                        <div class="special-content">
+                            <h3>First Month Discount</h3>
+                            <p class="special-description">Get 20% off on your first month subscription at Sunshine Mess</p>
+                            <p class="special-distance">350m away</p>
+                            <button class="btn btn-primary">Claim Offer</button>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <div class="offer-badge">FREE</div>
+                        <img src="/api/placeholder/400/200" alt="Special Offer">
+                        <div class="special-content">
+                            <h3>Free Breakfast Trial</h3>
+                            <p class="special-description">Try a free breakfast at Delicious Meals for 3 days</p>
+                            <p class="special-distance">450m away</p>
+                            <button class="btn btn-primary">Claim Offer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Know a great mess that's not listed?</h2>
+                <p>Help your fellow students by recommending a mess location</p>
+                <button class="btn btn-primary">Recommend a Mess</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>CampusMess</h2>
+                    <p>Finding the perfect mess for students since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>For Students</h3>
+                        <ul>
+                            <li><a href="explore.html">Find Mess</a></li>
+                            <li><a href="#">Write Review</a></li>
+                            <li><a href="#">Student Discount</a></li>
+                            <li><a href="#">Meal Plans</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h3>For Mess Owners</h3>
+                        <ul>
+                            <li><a href="#">List Your Mess</a></li>
+                            <li><a href="#">Owner Dashboard</a></li>
+                            <li><a href="#">Promotion Plans</a></li>
+                            <li><a href="#">Success Stories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CampusMess. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Instagram</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

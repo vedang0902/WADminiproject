@@ -1,0 +1,13 @@
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vedang0902/DSBDAminiproject.git
+git push -u origin main
+
+
+
+pushing existing rep
+git remote add origin https://github.com/vedang0902/DSBDAminiproject.git
+git branch -M main
+git push -u origin main

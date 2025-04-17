@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CampusMess - Find Your Perfect Mess</title>
+        <link rel="stylesheet" href="explorepage.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>CampusMess</h1>
+                    <p class="tagline">Find your perfect mess</p>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="explore.html" class="active">Explore</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                        <li><a href="#">Near Me</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-secondary">Log In</button>
+                    <button class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </header>
+    
+        <section class="explore-hero">
+            <div class="container">
+                <div class="explore-hero-content">
+                    <h1>Explore Mess Options</h1>
+                    <p>Find the perfect mess that matches your preferences and budget</p>
+                </div>
+            </div>
+        </section>
+    
+        <section class="explore-content">
+            <div class="container">
+                <div class="explore-layout">
+                    <aside class="filters">
+                        <div class="filter-section">
+                            <h3>Search</h3>
+                            <div class="search-box">
+                                <input type="text" placeholder="Search by name or location" class="filter-input">
+                                <button class="search-icon">🔍</button>
+                            </div>
+                        </div>
+    
+                        <div class="filter-section">
+                            <h3>Location</h3>
+                            <select class="filter-input">
+                                <option value="">All Locations</option>
+                                <option value="north">North Campus</option>
+                                <option value="south">South Campus</option>
+                                <option value="engineering">Engineering College</option>
+                                <option value="medical">Medical College</option>
+                                <option value="arts">Arts College</option>
+                            </select>
+                        </div>
+    
+                        <div class="filter-section">
+                            <h3>Price Range</h3>
+                            <div class="price-slider">
+                                <input type="range" min="500" max="5000" value="2500" class="range-slider" id="priceRange">
+                                <div class="price-range-labels">
+                                    <span>₹500</span>
+                                    <span id="priceValue">₹2500</span>
+                                    <span>₹5000</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="filter-section">
+                            <h3>Meal Type</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Breakfast
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Lunch
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Dinner
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="filter-section">
+                            <h3>Food Preference</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Vegetarian
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> Non-Vegetarian
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Jain
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="filter-section">
+                            <h3>Rating</h3>
+                            <div class="star-filter">
+                                <label class="star-label">
+                                    <input type="radio" name="rating"> 
+                                    <span>⭐⭐⭐⭐⭐</span> & up
+                                </label>
+                                <label class="star-label">
+                                    <input type="radio" name="rating" checked> 
+                                    <span>⭐⭐⭐⭐</span> & up
+                                </label>
+                                <label class="star-label">
+                                    <input type="radio" name="rating"> 
+                                    <span>⭐⭐⭐</span> & up
+                                </label>
+                                <label class="star-label">
+                                    <input type="radio" name="rating"> 
+                                    <span>⭐⭐</span> & up
+                                </label>
+                            </div>
+                        </div>
+    
+                        <div class="filter-section">
+                            <h3>Additional Features</h3>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Home Delivery
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Monthly Plans
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Weekend Special
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> Student Discount
+                                </label>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-primary apply-filters">Apply Filters</button>
+                        <button class="btn btn-outline reset-filters">Reset All</button>
+                    </aside>
+    
+                    <main class="results">
+                        <div class="results-header">
+                            <div class="results-count">
+                                <h3>24 Results Found</h3>
+                            </div>
+                            <div class="sort-options">
+                                <label for="sort">Sort by:</label>
+                                <select id="sort" class="sort-select">
+                                    <option value="relevance">Relevance</option>
+                                    <option value="rating-high">Rating (High to Low)</option>
+                                    <option value="price-low">Price (Low to High)</option>
+                                    <option value="price-high">Price (High to Low)</option>
+                                    <option value="distance">Distance</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="mess-grid">
+                            <div class="mess-card">
+                                <div class="mess-img">
+                                    <img src="/api/placeholder/400/250" alt="Sunshine Mess">
+                                    <span class="rating">4.8 ⭐</span>
+                                    <div class="bookmark-icon">📌</div>
+                                </div>
+                                <div class="mess-info">
+                                    <h3>Sunshine Mess</h3>
+                                    <p class="location">Near Engineering College</p>
+                                    <p class="distance"><span class="distance-icon">📍</span> 0.5 km from you</p>
+                                    <p class="price">₹2,500/month</p>
+                                    <div class="tags">
+                                        <span class="tag">Veg</span>
+                                        <span class="tag">Non-Veg</span>
+                                        <span class="tag">Breakfast</span>
+                                    </div>
+                                    <button class="btn btn-secondary view-btn">View Details</button>
+                                </div>
+                            </div>
+    
+                            <div class="mess-card">
+                                <div class="mess-img">
+                                    <img src="/api/placeholder/400/250" alt="Home Food Mess">
+                                    <span class="rating">4.5 ⭐</span>
+                                    <div class="bookmark-icon active">📌</div>
+                                </div>
+                                <div class="mess-info">
+                                    <h3>Home Food Mess</h3>
+                                    <p class="location">University Road</p>
+                                    <p class="distance"><span class="distance-icon">📍</span> 0.8 km from you</p>
+                                    <p class="price">₹2,200/month</p>
+                                    <div class="tags">
+                                        <span class="tag">Veg Only</span>
+                                        <span class="tag">Lunch</span>
+                                        <span class="tag">Dinner</span>
+                                    </div>
+                                    <button class="btn btn-secondary view-btn">View Details</button>
+                                </div>
+                            </div>
+    
+                            <div class="mess-card">
+                                <div class="mess-img">
+                                    <img src="/api/placeholder/400/250" alt="Student Special Mess">
+                                    <span class="rating">4.3 ⭐</span>
+                                    <div class="bookmark-icon">📌</div>
+                                </div>
+                                <div class="mess-info">
+                                    <h3>Student Special Mess</h3>
+                                    <p class="location">Hostel Area, South Campus</p>
+                                    <p class="distance"><span class="distance-icon">📍</span> 1.2 km from you</p>
+                                    <p class="price">₹1,800/month</p>
+                                    <div class="tags">
+                                        <span class="tag">Veg</span>
+                                        <span class="tag">Non-Veg</span>
+                                        <span class="tag">All Meals</span>
+                                    </div>
+                                    <button class="btn btn-secondary view-btn">View Details</button>
+                                </div>
+                            </div>
+    
+                            <div class="mess-card">
+                                <div class="mess-img">
+                                    <img src="/api/placeholder/400/250" alt="Delicious Meals">
+                                    <span class="rating">4.7 ⭐</span>
+                                    <div class="bookmark-icon">📌</div>
+                                </div>
+                                <div class="mess-info">
+                                    <h3>Delicious Meals</h3>
+                                    <p class="location">College Corner</p>
+                                    <p class="distance"><span class="distance-icon">📍</span> 0.3 km from you</p>
+                                    <p class="price">₹2,800/month</p>
+                                    <div class="tags">
+                                        <span class="tag">Veg</span>
+                                        <span class="tag">Non-Veg</span>
+                                        <span class="tag">Home Delivery</span>
+                                    </div>
+                                    <button class="btn btn-secondary view-btn">View Details</button>
+                                </div>
+                            </div>
+    
+                            <div class="mess-card">
+                                <div class="mess-img">
+                                    <img src="/api/placeholder/400/250" alt="Budget Bites">
+                                    <span class="rating">4.0 ⭐</span>
+                                    <div class="bookmark-icon">📌</div>
+                                </div>
+                                <div class="mess-info">
+                                    <h3>Budget Bites</h3>
+                                    <p class="location">North Campus</p>
+                                    <p class="distance"><span class="distance-icon">📍</span> 1.5 km from you</p>
+                                    <p class="price">₹1,500/month</p>
+                                    <div class="tags">
+                                        <span class="tag">Veg Only</span>
+                                        <span class="tag">Lunch</span>
+                                        <span class="tag">Dinner</span>
+                                    </div>
+                                    <button class="btn btn-secondary view-btn">View Details</button>
+                                </div>
+                            </div>
+    
+                            <div class="mess-card">
+                                <div class="mess-img">
+                                    <img src="/api/placeholder/400/250" alt="Premium Mess">
+                                    <span class="rating">4.9 ⭐</span>
+                                    <div class="bookmark-icon">📌</div>
+                                </div>
+                                <div class="mess-info">
+                                    <h3>Premium Mess</h3>
+                                    <p class="location">Faculty Housing Area</p>
+                                    <p class="distance"><span class="distance-icon">📍</span> 2.1 km from you</p>
+                                    <p class="price">₹3,200/month</p>
+                                    <div class="tags">
+                                        <span class="tag">Premium</span>
+                                        <span class="tag">All Meals</span>
+                                        <span class="tag">Weekend Special</span>
+                                    </div>
+                                    <button class="btn btn-secondary view-btn">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="pagination">
+                            <button class="pagination-arrow disabled">←</button>
+                            <button class="pagination-number active">1</button>
+                            <button class="pagination-number">2</button>
+                            <button class="pagination-number">3</button>
+                            <button class="pagination-number">4</button>
+                            <button class="pagination-arrow">→</button>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Can't find what you're looking for?</h2>
+                    <p>Let us know your preferences and we'll help you find the perfect mess</p>
+                    <button class="btn btn-primary">Contact Support</button>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>CampusMess</h2>
+                        <p>Finding the perfect mess for students since 2023</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-group">
+                            <h3>For Students</h3>
+                            <ul>
+                                <li><a href="explore.html">Find Mess</a></li>
+                                <li><a href="#">Write Review</a></li>
+                                <li><a href="#">Student Discount</a></li>
+                                <li><a href="#">Meal Plans</a></li>
+                            </ul>
+                        </div>
+                        <div class="link-group">
+                            <h3>For Mess Owners</h3>
+                            <ul>
+                                <li><a href="#">List Your Mess</a></li>
+                                <li><a href="#">Owner Dashboard</a></li>
+                                <li><a href="#">Promotion Plans</a></li>
+                                <li><a href="#">Success Stories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 CampusMess. All rights reserved.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
